@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Marketplace</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>BookPlace</h1>
+    </div>
+
+    <nav class="menu-principal">
+      <a href="index.html">Inicio</a>
+      <a href="paginas/listado.html">Anuncios</a>
+      <div class="categorias-dropdown">
+        <button id="btn-categorias">Categorías ⌄</button>
+        <ul id="lista-categorias" class="oculto">
+          <li><a href="#">Libros</a></li>
+          <li><a href="#">Comics</a></li>
+          <li><a href="#">Mangas</a></li>
+          <li><a href="#">Revistas</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+            <g>
+                <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+            </g>
+        </svg>
+        <input placeholder="Search" type="search" class="input">
+    </div>    
+
+
+
+
+    <div class="auth-links">
+      <div class="cuenta-dropdown">
+        <button id="btn-cuenta">Mi cuenta ⌄</button>
+        <ul id="lista-cuenta" class="oculto">
+          <li><a href="#">Guardados</a></li>
+          <li><a href="#">Mis anuncios</a></li>
+          <li><a href="paginas/mensajes.html">Mensajes</a></li>
+        </ul>
+      </div>
+      <a href="login.html" class="cerrar-sesion">Cerrar sesión</a>
+    </div>
+    
+
+  </header>
+
+
+
+  <main>
+
+    <section class="banner">
+      <img src="imagenes/librosfondo.jpg" alt="banner Image" class="banner-img" />
+      <div class="banner-overlay">
+        <h2>La comunidad de lectores, coleccionistas y vendedores más confiable</h2>
+      </div>
+    </section>    
+
+
+    <section class="servicios">
+      <h2>Nuestros servicios</h2>
+      <ul>
+        <li>Compra y venta de libros y publicaciones impresas</li>
+        <li>Gestión de anuncios y favoritos para usuarios registrados</li>
+        <li>Mensajería integrada para consultas y negociaciones</li>
+      </ul>
+    </section>
+
+    <section class="categorias-destacadas">
+      <h2>Categorías principales</h2>
+      <div class="categorias-grid">
+        <div class="categoria">
+          <h3>Libros</h3>
+          <p>Obras literarias, académicas y técnicas.</p>
+        </div>
+        <div class="categoria">
+          <h3>Cómics</h3>
+          <p>Ediciones de superhéroes, cómics independientes y coleccionables.</p>
+        </div>
+        <div class="categoria">
+          <h3>Mangas</h3>
+          <p>Historias gráficas japonesas de todos los géneros.</p>
+        </div>
+        <div class="categoria">
+          <h3>Revistas</h3>
+          <p>Publicaciones culturales, científicas y de actualidad.</p>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    <section class="cta">
+      <h2>Comienza hoy mismo</h2>
+      <a href="registro.html" class="btn-cta">Registrarse</a>
+    </section>
+  </main>
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listado.html">Anuncios</a></li>
+          <li><a href="registro.html">Registrarse</a></li>
+          <li><a href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contacto">
+        <h4>Contacto</h4>
+        <p>Email: soporte@BookPlace.com</p>
+        <p>Teléfono: +591 123-456-789</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 BookPlace | Todos los derechos reservados</p>
+    </div>
+  </footer>
+ 
+
+  
+</body>
+  <script src="js/index.js"></script>
+
+</html>

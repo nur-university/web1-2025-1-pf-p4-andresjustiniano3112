@@ -1,0 +1,199 @@
+body{
+  background-color: #F2EDE1;
+}
+
+
+.banner {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner-overlay h2 {
+  font-size: 27px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+
+
+
+
+
+.categorias-destacadas, .faq {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.servicios{
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  text-align: center;
+  padding-top: 20px;
+}
+.servicios h2{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.servicios ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.servicios li{
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+
+
+
+
+
+.categorias-destacadas{
+  background-color: #AEC8A4;
+  padding-bottom: 30px;
+}
+
+.categorias-destacadas h2{
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 5px;
+
+
+}
+
+.categorias-grid, .anuncios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.categoria, .anuncio {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 20px;
+  
+}
+
+.categoria h3, p{
+  text-align: center;
+}
+
+.categoria p, .anuncio p {
+  margin: 0.3rem 0;
+} 
+
+
+.cta{
+  text-align: center;
+
+}
+
+
+
+.btn-cta {
+  display: inline-block;
+  background: #FFD000;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .banner {
+    height: 300px;
+  }
+
+  .banner-overlay h2 {
+    font-size: 22px;
+  }
+
+  .servicios li {
+    font-size: 15px;
+  }
+
+  .categorias-grid, .anuncios-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .categoria, .anuncio {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .btn-cta {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .banner {
+    height: 250px;
+  }
+
+  .banner-overlay h2 {
+    font-size: 18px;
+  }
+
+  .categorias-destacadas, .faq, .servicios {
+    margin: 1rem 0;
+    padding: 0.8rem;
+  }
+
+  .servicios li {
+    font-size: 14px;
+  }
+
+  .categorias-grid, .anuncios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .categoria, .anuncio {
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  .btn-cta {
+    font-size: 0.9rem;
+    padding: 7px 10px;
+  }
+}
+

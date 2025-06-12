@@ -1,0 +1,291 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {  
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #AEC8A4;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo h1 {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.menu-principal {
+  display: flex;
+  align-items: center;
+}
+
+.menu-principal a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.categorias-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.categorias-dropdown button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.categorias-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 100;
+}
+
+.categorias-dropdown ul li {
+  padding: 0.5rem 1rem;
+}
+
+.categorias-dropdown ul li:hover {
+  background-color: #f0f0f0;
+}
+
+.categorias-dropdown ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.categorias-dropdown ul.mostrar {
+  display: block;
+}
+
+
+
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 300px;
+}
+
+.input {
+  height: 30px;
+  line-height: 28px;
+  padding: 0 1rem;
+  width: 100%;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #D9E8D8;
+  color: #0d0c22;
+  box-shadow: 0 0 5px #C1D9BF, 0 0 0 10px #f5f5f5eb;
+  transition: .3s ease;
+}
+
+.input::placeholder {
+  color: #777;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #777;
+  width: 1rem;
+  height: 1rem;
+}
+
+
+
+
+.auth-links {
+  display: flex;
+  align-items: center;
+}
+
+.cerrar-sesion {
+  margin-left: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.cerrar-sesion:hover {
+  text-decoration: underline;
+}
+
+
+
+.cuenta-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.cuenta-dropdown button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.cuenta-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 100;
+}
+
+.cuenta-dropdown ul li {
+  padding: 0.5rem 1rem;
+}
+
+.cuenta-dropdown ul li:hover {
+  background-color: #f0f0f0;
+}
+
+.cuenta-dropdown ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.cuenta-dropdown ul.mostrar {
+  display: block;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo h1 {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .menu-principal {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+  }
+
+  .menu-principal a {
+    margin: 0.3rem 0;
+  }
+
+  .categorias-dropdown {
+    margin-top: 0.5rem;
+  }
+
+
+
+
+  .group {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 1rem;
+  
+  }
+
+
+
+  .auth-links {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .auth-links a {
+    margin-right: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.8rem;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+
+  }
+
+  .menu-principal {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu-principal a {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+  }
+
+  .categorias-dropdown button {
+    font-size: 0.9rem;
+  }
+
+  .group {
+    margin-top: 0.8rem;
+    max-width: 100%;
+  }
+
+  .input {
+    font-size: 0.9rem;
+  
+  }
+
+  
+
+  .auth-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .auth-links a {
+    font-size: 15px;
+  }
+}

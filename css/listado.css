@@ -1,0 +1,233 @@
+body{
+  background-color: #F2EDE1;
+}
+
+.listado-anuncios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.anuncio {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s;
+  
+}
+
+.anuncio:hover {
+  transform: scale(1.03);
+}
+
+.anuncio img {
+  max-width: 100%;
+  height: 75%;
+}
+
+.anuncio-info {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anuncio-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.anuncio-info p {
+  margin: 0.2rem 0;
+}
+
+.anuncio-info button {
+  margin-top: 0.5rem;
+  background-color: #FFD000;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+
+.modal { 
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background: rgba(0,0,0,0.5);
+ }
+.modal-contenido { 
+  background: #fff;
+  margin: 5% auto; 
+  padding: 2rem;
+  border-radius: 
+  10px; width: 90%;
+  max-width: 600px;
+  position: relative; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+.modal-contenido img { 
+  width: 100%; 
+  max-width: 300px; 
+  margin-bottom: 1rem; 
+  border-radius: 5px; 
+}
+.modal-contenido h2 { 
+  margin-bottom: 0.5rem; 
+  font-size: 1.5rem; 
+}
+.modal-contenido p { 
+  margin: 0.3rem 0; 
+  text-align: center; 
+}
+.modal-contenido button { 
+  background: #FFD000; 
+  border: none; 
+  padding: 0.5rem 1rem; 
+  cursor: pointer; 
+  margin-top: 0.5rem; 
+  border-radius: 5px; 
+}
+.enviar-mensaje { 
+  margin-top: 1rem; 
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+.enviar-mensaje textarea { 
+  width: 100%; 
+  min-height: 60px; 
+  padding: 0.5rem; 
+  margin-bottom: 0.5rem; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  resize: vertical; 
+}
+.cerrar-modal { 
+  color: #555; 
+  font-size: 28px; 
+  font-weight: bold; 
+  position: absolute; 
+  top: 10px; 
+  right: 20px; 
+  cursor: pointer;
+ }
+.cerrar-modal:hover { 
+  color: #000;
+}
+
+
+
+@media (max-width: 768px) {
+  .listado-anuncios {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 15px;
+    gap: 0.8rem;
+  }
+
+  .anuncio{
+    margin: 10px;
+    padding-bottom: 15px;
+  }
+
+  .anuncio-info h3 {
+    font-size: 1rem;
+  }
+
+  .anuncio-info p {
+    font-size: 0.85rem;
+  }
+
+  .anuncio-info button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-contenido {
+    padding: 1.5rem;
+  }
+
+  .modal-contenido h2 {
+    font-size: 1.3rem;
+  }
+
+  .modal-contenido p {
+    font-size: 0.85rem;
+  }
+
+  .modal-contenido button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .listado-anuncios {
+    grid-template-columns: 0.8fr;
+    margin: 10px;
+    gap: 0.5rem;
+    margin-left: 55px;
+  }
+
+  .anuncio{
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+
+  .anuncio-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .anuncio-info p {
+    font-size: 0.8rem;
+  }
+
+  .anuncio-info button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .modal-contenido {
+    padding: 1rem;
+  }
+
+  .modal-contenido h2 {
+    font-size: 1.2rem;
+  }
+
+  .modal-contenido p {
+    font-size: 0.8rem;
+  }
+
+  .modal-contenido button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .enviar-mensaje textarea {
+    min-height: 50px;
+    font-size: 0.85rem;
+  }
+
+  .cerrar-modal {
+    font-size: 24px;
+  }
+}
+
+

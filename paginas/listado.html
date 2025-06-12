@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listado de Anuncios</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/listado.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>BookPlace</h1>
+    </div>
+
+    <nav class="menu-principal">
+      <a href="../index.html">Inicio</a>
+      <a href="listado.html">Anuncios</a>
+      <div class="categorias-dropdown">
+        <button id="btn-categorias">Categorías ⌄</button>
+        <ul id="lista-categorias" class="oculto">
+          <li><a href="#">Libros</a></li>
+          <li><a href="#">Comics</a></li>
+          <li><a href="#">Mangas</a></li>
+          <li><a href="#">Revistas</a></li>
+        </ul>
+      </div>
+    </nav>
+
+     <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+            <g>
+                <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+            </g>
+        </svg>
+        <input placeholder="Search" type="search" class="input">
+    </div>  
+
+    <div class="auth-links">
+        <div class="cuenta-dropdown">
+            <button id="btn-cuenta">Mi cuenta ⌄</button>
+            <ul id="lista-cuenta" class="oculto">
+            <li><a href="#">Guardados</a></li>
+            <li><a href="#">Mis anuncios</a></li>
+            <li><a href="mensajes.html">Mensajes</a></li>
+            </ul>
+        </div>
+        <a href="login.html" class="cerrar-sesion">Cerrar sesión</a>
+    </div>
+
+
+
+
+  </header>
+
+  <main>
+
+    <section class="listado-anuncios">
+
+      <article class="anuncio">
+        <img src="../imagenes/cien.webp" alt="Libro 1">
+        <div class="anuncio-info">
+          <h3>“Cien Años de Soledad” </h3>
+          <p>Precio: $15</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal1">Detalle</button>
+        </div>
+      </article>
+
+     
+      <article class="anuncio">
+        <img src="../imagenes/spiderman.jpg" alt="Cómic 1">
+        <div class="anuncio-info">
+          <h3>“Spider-Man” #1 </h3>
+          <p>Precio: $8</p>
+          <p>Categoría: Cómics</p>
+          <button class="ver-detalle-btn" data-modal="modal2">Detalle</button>
+        </div>
+      </article>
+
+      <article class="anuncio">
+        <img src="../imagenes/naruto.jpeg" alt="Manga 1">
+        <div class="anuncio-info">
+          <h3>“Naruto” Vol. 1 </h3>
+          <p>Precio: $10</p>
+          <p>Categoría: Mangas</p>
+          <button class="ver-detalle-btn" data-modal="modal3">Detalle</button>
+        </div>
+      </article>
+
+      
+      <article class="anuncio">
+        <img src="../imagenes/national.jpeg" alt="Revista 1">
+        <div class="anuncio-info">
+          <h3>National Geographic</h3>
+          <p>Precio: $6</p>
+          <p>Categoría: Revistas</p>
+          <button class="ver-detalle-btn" data-modal="modal4">Detalle</button>
+        </div>
+      </article>
+    
+      <article class="anuncio">
+        <img src="../imagenes/principito.jpeg" alt="Libro 5">
+        <div class="anuncio-info">
+          <h3>“El Principito”</h3>
+          <p>Precio: $10</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal5">Detalle</button>
+        </div>
+      </article> 
+      
+      <article class="anuncio">
+        <img src="../imagenes/1984aaaaaaaaa.jpeg" alt="Libro 6">
+        <div class="anuncio-info">
+          <h3>“1984” - George Orwell</h3>
+          <p>Precio: $12</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal6">Detalle</button>
+        </div>
+      </article>  
+
+      
+      <article class="anuncio">
+        <img src="../imagenes/juegos.webp" alt="Libro 7">
+        <div class="anuncio-info">
+          <h3>“Los juegos del hambre” </h3>
+          <p>Precio: $14</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal7">Detalle</button>
+        </div>
+      </article>
+
+   
+      <article class="anuncio">
+        <img src="../imagenes/sombra.jpeg" alt="Libro 8">
+        <div class="anuncio-info">
+          <h3>“La Sombra del Viento” </h3>
+          <p>Precio: $11</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal8">Detalle</button>
+        </div>
+      </article>
+
+    
+      <article class="anuncio">
+        <img src="../imagenes/arte.jpeg" alt="Libro 9">
+        <div class="anuncio-info">
+          <h3>“El arte de la guerra” </h3>
+          <p>Precio: $7</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal9">Detalle</button>
+        </div>
+      </article> 
+
+
+      <article class="anuncio">
+        <img src="../imagenes/donquijote.jpeg" alt="Libro 10">
+        <div class="anuncio-info">
+          <h3>“Don Quijote de la Mancha”</h3>
+          <p>Precio: $20</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal10">Detalle</button>
+        </div>
+      </article>
+      
+      <article class="anuncio">
+        <img src="../imagenes/sapiens.jpg" alt="Libro 11">
+        <div class="anuncio-info">
+          <h3>“Sapiens: De animales a dioses” </h3>
+          <p>Precio: $18</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal11">Detalle</button>
+        </div>
+      </article>      
+      
+      <article class="anuncio">
+        <img src="../imagenes/cronicas.avif" alt="Libro 12">
+        <div class="anuncio-info">
+          <h3>“Crónica de una muerte anunciada” </h3>
+          <p>Precio: $13</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal12">Detalle</button>
+        </div>
+      </article>  
+      
+      <article class="anuncio">
+        <img src="../imagenes/rayuela.gif" alt="Libro 13">
+        <div class="anuncio-info">
+          <h3>“Rayuela” </h3>
+          <p>Precio: $17</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal13">Detalle</button>
+        </div>
+      </article>     
+      
+      <article class="anuncio">
+        <img src="../imagenes/hobbit.jpeg" alt="Libro 14">
+        <div class="anuncio-info">
+          <h3>“El Hobbit” </h3>
+          <p>Precio: $16</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal14">Detalle</button>
+        </div>
+      </article>      
+      
+      <article class="anuncio">
+        <img src="../imagenes/alquimista.webp" alt="Libro 15">
+        <div class="anuncio-info">
+          <h3>“El Alquimista”</h3>
+          <p>Precio: $9</p>
+          <p>Categoría: Libros</p>
+          <button class="ver-detalle-btn" data-modal="modal15">Detalle</button>
+        </div>
+      </article>
+
+
+      
+    </section>
+  </main>
+
+  
+
+  <div id="modal1" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/cien.webp" alt="Libro 1">
+      <h2>“Cien Años de Soledad”</h2>
+      <p>Autor: Gabriel García Márquez</p>
+      <p>Descripción: Obra maestra de la literatura latinoamericana.</p>
+      <p>Precio: $15</p>
+      <p>Vendedor: Ana López</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/spiderman.jpg" alt="Cómic 1">
+      <h2>“Spider-Man” #1</h2>
+      <p>Editorial: Marvel Comics</p>
+      <p>Descripción: Primer número del famoso héroe arácnido.</p>
+      <p>Precio: $8</p>
+      <p>Vendedor: Laura Pérez</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/naruto.jpeg" alt="Manga 1">
+      <h2>“Naruto” Vol. 1</h2>
+      <p>Autor: Masashi Kishimoto</p>
+      <p>Descripción: Primer tomo de la historia de Naruto Uzumaki.</p>
+      <p>Precio: $10</p>
+      <p>Vendedor: Diego Castillo</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/national.jpeg" alt="Revista 1">
+      <h2>National Geographic</h2>
+      <p>Edición: Abril 2023</p>
+      <p>Descripción: Explora las maravillas de la naturaleza.</p>
+      <p>Precio: $6</p>
+      <p>Vendedor: María Contreras</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal5" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/principito.jpeg" alt="Libro 5">
+      <h2>“El Principito”</h2>
+      <p>Autor: Antoine de Saint-Exupéry</p>
+      <p>Descripción: Una fábula poética sobre el amor, la amistad y la importancia de lo esencial.</p>
+      <p>Precio: $10</p>
+      <p>Vendedor: Luis Ramírez</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>  
+
+  <div id="modal6" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/1984aaaaaaaaa.jpeg" alt="Libro 6">
+      <h2>“1984”</h2>
+      <p>Autor: George Orwell</p>
+      <p>Descripción: Una distopía sobre la vigilancia extrema y la manipulación de la información.</p>
+      <p>Precio: $12</p>
+      <p>Vendedor: Carla Gómez</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div> 
+  
+  <div id="modal7" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/juegos.webp" alt="Libro 7">
+      <h2>“Los juegos del hambre”</h2>
+      <p>Autor: Suzanne Collins</p>
+      <p>Descripción: Una saga juvenil sobre supervivencia, poder y resistencia.</p>
+      <p>Precio: $14</p>
+      <p>Vendedor: Javier Díaz</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>  
+
+  <div id="modal8" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/sombra.jpeg" alt="Libro 8">
+      <h2>“La Sombra del Viento”</h2>
+      <p>Autor: Carlos Ruiz Zafón</p>
+      <p>Descripción: Una novela de misterio ambientada en la Barcelona de la posguerra.</p>
+      <p>Precio: $11</p>
+      <p>Vendedor: Andrea Salinas</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal9" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/arte.jpeg" alt="Libro 9">
+      <h2>“El arte de la guerra”</h2>
+      <p>Autor: Sun Tzu</p>
+      <p>Descripción: Un tratado de estrategia militar aplicable a la vida y los negocios.</p>
+      <p>Precio: $7</p>
+      <p>Vendedor: Pablo Ramos</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>  
+  <div id="modal10" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/donquijote.jpeg" alt="Libro 10">
+      <h2>“Don Quijote de la Mancha”</h2>
+      <p>Autor: Miguel de Cervantes</p>
+      <p>Descripción: La obra más importante de la literatura española, llena de humor, aventuras y sátira.</p>
+      <p>Precio: $20</p>
+      <p>Vendedor: Alejandro García</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal11" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/sapiens.jpg" alt="Libro 11">
+      <h2>“Sapiens: De animales a dioses”</h2>
+      <p>Autor: Yuval Noah Harari</p>
+      <p>Descripción: Una historia breve de la humanidad y sus grandes transformaciones.</p>
+      <p>Precio: $18</p>
+      <p>Vendedor: David López</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal12" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/cronicas.avif" alt="Libro 12">
+      <h2>“Crónica de una muerte anunciada”</h2>
+      <p>Autor: Gabriel García Márquez</p>
+      <p>Descripción: Una novela corta y sorprendente, donde la fatalidad está presente desde la primera línea.</p>
+      <p>Precio: $13</p>
+      <p>Vendedor: Esteban Rojas</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal13" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/rayuela.gif" alt="Libro 13">
+      <h2>“Rayuela”</h2>
+      <p>Autor: Julio Cortázar</p>
+      <p>Descripción: Una obra experimental e innovadora que desafía las formas tradicionales de la novela.</p>
+      <p>Precio: $17</p>
+      <p>Vendedor: Claudia Mendoza</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal14" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/hobbit.jpeg" alt="Libro 14">
+      <h2>“El Hobbit”</h2>
+      <p>Autor: J.R.R. Tolkien</p>
+      <p>Descripción: Una aventura fantástica por la Tierra Media con el valiente hobbit Bilbo Bolsón.</p>
+      <p>Precio: $16</p>
+      <p>Vendedor: Felipe Vargas</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>  
+
+  <div id="modal15" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <img src="../imagenes/alquimista.webp" alt="Libro 15">
+      <h2>“El Alquimista”</h2>
+      <p>Autor: Paulo Coelho</p>
+      <p>Descripción: Una novela de autodescubrimiento y realización personal a través de un viaje lleno de sabiduría.</p>
+      <p>Precio: $9</p>
+      <p>Vendedor: Verónica Suárez</p>
+      <button onclick="alert('Debes iniciar sesión para guardar este anuncio.')">Guardar anuncio</button>
+      <div class="enviar-mensaje">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button onclick="alert('Debes iniciar sesión para enviar un mensaje.')">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listado.html">Anuncios</a></li>
+          <li><a href="registro.html">Registrarse</a></li>
+          <li><a href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contacto">
+        <h4>Contacto</h4>
+        <p>Email: soporte@BookPlace.com</p>
+        <p>Teléfono: +591 123-456-789</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 BookPlace | Todos los derechos reservados</p>
+    </div>
+  </footer>
+  
+
+</body>
+
+<script src="../js/detalle.js"></script>
+<script src="../js/index.js"></script>
+
+</html>
