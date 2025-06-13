@@ -230,14 +230,32 @@ header {
 
 
   .auth-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     margin-top: 1rem;
+    width: 100%;
+  }
+
+  .cuenta-dropdown {
     width: 100%;
     text-align: center;
     margin-top: 25px;
   }
 
-  .auth-links a {
-    margin-right: 1rem;
+  .cuenta-dropdown ul {
+    width: 100%;
+    left: 0;
+    text-align: left;
+  }
+
+  .cuenta-dropdown ul li {
+    padding: 0.8rem 1rem;
+  }
+
+  .cerrar-sesion {
+    margin-left: 0;
+    font-size: 16px;
   }
 }
 
@@ -281,11 +299,21 @@ header {
   
 
   .auth-links {
-    margin-top: 20px;
-    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
   }
 
-  .auth-links a {
-    font-size: 15px;
+  .cuenta-dropdown button {
+    font-size: 14px;
+  }
+
+  .cuenta-dropdown ul li {
+    font-size: 14px;
+  }
+
+  .cerrar-sesion {
+    font-size: 14px;
+    text-align: center;
   }
 }
